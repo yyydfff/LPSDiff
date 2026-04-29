@@ -6,7 +6,10 @@ This is the official implementation of the paper  **"Reparameterizing Restoratio
 
 ## Approach
 
-![LPSDiff framework](figures/framework.png)
+<p align="center">
+  <img src="figures/LPSDiff.png" width="850">
+</p>
 
-*Figure 1. Overall architecture of LPSDiff.*
-
+<p align="center">
+  <em>Figure 1. Overall architecture of LPSDiff.</em>
+</p>
