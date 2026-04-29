@@ -23,8 +23,24 @@ This is the official implementation of the paper  **"Reparameterizing Restoratio
 
 
 ## Requirements
+```bash
 - Linux Platform
 - torch==1.12.1+cu113 # depends on the CUDA version of your machine
 - torchvision==0.13.1+cu113
 - Python==3.8.0
 - numpy==1.22.3
+```
+
+## Training and Inference
+
+### Training
+
+```bash
+python main.py 
+```
+
+### Inference & Testing
+
+```bash
+python test.py 
+```
