@@ -4,7 +4,7 @@
 This is the official implementation of the paper  **"Reparameterizing Restoration States: Latent Phase-State Diffusion for Low-Dose CT Denoising"**.
 
 
-## Approach
+## Project Introduction
 
 <p align="center">
   <img src="figures/LPSDiff.png" width="850">
