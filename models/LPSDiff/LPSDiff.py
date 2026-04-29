@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-
-# --- LPSDiff.py: latent phase-state diffusion version ---
+
 import argparse
 import copy
 import logging
