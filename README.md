@@ -20,3 +20,11 @@ This is the official implementation of the paper  **"Reparameterizing Restoratio
 
 - The AAPM-Mayo dataset can be found from: [Mayo 2016](https://ctcicblog.mayo.edu/2016-low-dose-ct-grand-challenge/).
 - The Piglet Dataset can be found from: [SAGAN](https://github.com/xinario/SAGAN).
+
+
+## Requirements
+- Linux Platform
+- torch==1.12.1+cu113 # depends on the CUDA version of your machine
+- torchvision==0.13.1+cu113
+- Python==3.8.0
+- numpy==1.22.3
