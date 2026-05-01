@@ -13,7 +13,7 @@ def _parse_all_args():
 
     if default_opt.model_name not in model_dict:
         raise ValueError(
-            f"未知模型: {default_opt.model_name}. 可选: {list(model_dict.keys())}"
+            f": {default_opt.model_name}. : {list(model_dict.keys())}"
         )
 
     MODEL_CLASS=model_dict[default_opt.model_name]
@@ -77,7 +77,7 @@ def _set_device(opt):
 def _smart_load_state_dict(module:nn.Module,ckpt_path:str,device):
     if not os.path.exists(ckpt_path):
         raise FileNotFoundError(
-            f'未找到权重文件: {ckpt_path}'
+            f': {ckpt_path}'
         )
 
     ckpt=torch.load(
@@ -105,7 +105,7 @@ def _smart_load_state_dict(module:nn.Module,ckpt_path:str,device):
     )
 
     print(
-        f'[Load] 从 {ckpt_path} 加载完成：{msg}'
+        f'[Load] 从 {ckpt_path} ：{msg}'
     )
 
 
@@ -118,7 +118,7 @@ def main():
     model:TrainTask=MODEL_CLASS(opt)
 
     ckpt_path=opt.ckpt or _infer_default_best_path()
-    print(f'权重路径: {ckpt_path}')
+    print(f': {ckpt_path}')
 
     if hasattr(model,'ema_model'):
         _smart_load_state_dict(
