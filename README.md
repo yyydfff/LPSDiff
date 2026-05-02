@@ -19,6 +19,7 @@ This is the official implementation of the paper  **"Reparameterizing Restoratio
 ## Data Preparation
 
 - The AAPM-Mayo dataset can be found from: [Mayo 2016](https://ctcicblog.mayo.edu/2016-low-dose-ct-grand-challenge/).
+- The AAPM-Mayo dataset can be found from:[Hybrid-DL-IR-Data](https://data.mendeley.com/datasets/j7khwb3z3r/1)
 - The Piglet Dataset can be found from: [SAGAN](https://github.com/xinario/SAGAN).
 
 
