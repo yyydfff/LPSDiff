@@ -98,7 +98,7 @@ class ResidualBlock2D(nn.Module):
         return self.act(x + self.net(x))
 
 
-class LocalPhaseStateEvolution(nn.Module):
+class PhaseConditionedLocalModulation(nn.Module):
 
     def __init__(self, hidden=32, phase_dim=32, unroll_steps=2, step_scale=0.25):
         super().__init__()
@@ -266,7 +266,7 @@ class Network(nn.Module):
         super().__init__()
         self.unet = UNet(in_channels=in_channels, out_channels=out_channels)
         self.context = context
-        self.local_phase_evolution = LocalPhaseStateEvolution(
+        self.local_phase_evolution = PhaseConditionedLocalModulation(
             hidden=32,
             phase_dim=32,
             unroll_steps=2,
