@@ -17,7 +17,7 @@ def extract(a: torch.Tensor, t: torch.Tensor, x_shape: Tuple[int, ...]) -> torch
 
 
 def linear_alpha_schedule(timesteps: int) -> torch.Tensor:
-    # Kept for compatibility with the original cold-diffusion bridge.
+    
     start = 1e-4
     end = 0.02
     return torch.linspace(start, end, timesteps)
